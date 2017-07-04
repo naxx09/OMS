@@ -1,0 +1,3 @@
+D:\My Document\CMU 2016-2017\Fall 2016\BIS 635\OMS_Project\OMS_0.7.1\OMS_0.1\bin\Debug\OMS_0.7.1.exe.config
+D:\My Document\CMU 2016-2017\Fall 2016\BIS 635\OMS_Project\OMS_0.7.1\OMS_0.1\obj\Debug\OMS_0.7.1.vbproj.ResolveComReference.cache
+D:\My Document\CMU 2016-2017\Fall 2016\BIS 635\OMS_Project\OMS_0.7.1\OMS_0.1\bin\Debug\OMS_Preview.exe.config

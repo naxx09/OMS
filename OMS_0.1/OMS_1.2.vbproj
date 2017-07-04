@@ -1,0 +1,536 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8816DF17-4429-4767-BD74-4C76EF6030AD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>OMS.My.MyApplication</StartupObject>
+    <RootNamespace>OMS</RootNamespace>
+    <AssemblyName>OMS_1.2</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>OMS_1.2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>OMS_1.2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\icon 64x64 65wt round bg.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>2A04BC4B9420A6B2D14033578FD1BBE15DF697C6</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>OMS_Preview_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar.Keyboard, Version=12.0.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar.Keyboard.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Layout, Version=12.0.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar.Layout.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Layout.Design, Version=12.0.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar.Layout.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Schedule, Version=12.0.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar.Schedule.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.SuperGrid, Version=12.0.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar.SuperGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=12.0.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.Instrumentation, Version=12.0.0.1, Culture=neutral, PublicKeyToken=bc4a9d761ea44ef0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.Instrumentation.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.SuperGrid.Design, Version=12.0.0.1, Culture=neutral, PublicKeyToken=1fea3f5d8d482bff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.SuperGrid.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.TreeGX, Version=12.0.0.1, Culture=neutral, PublicKeyToken=cfcbd7476b2389d1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.TreeGX.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>iTextSharp\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddressForm.Designer.vb">
+      <DependentUpon>AddressForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddressForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BalanceReport.designer.vb">
+      <DependentUpon>BalanceReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BalanceReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditDonorForm.designer.vb">
+      <DependentUpon>EditDonorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditDonorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDonationForm.designer.vb">
+      <DependentUpon>AddDonationForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddDonationForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSpendForm.designer.vb">
+      <DependentUpon>AddSpendForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddSpendForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUpForm.designer.vb">
+      <DependentUpon>SignUpForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SignUpForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdopterReport.designer.vb">
+      <DependentUpon>AdopterReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdopterReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddChildForm.designer.vb">
+      <DependentUpon>AddChildForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddChildForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildrenReport.designer.vb">
+      <DependentUpon>ChildrenReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChildrenReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBAccess.vb" />
+    <Compile Include="DonorReport.designer.vb">
+      <DependentUpon>DonorReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DonorReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditAccountForm.designer.vb">
+      <DependentUpon>EditAccountForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditAccountForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditAdopterForm.designer.vb">
+      <DependentUpon>EditAdopterForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditAdopterForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditChildForm.designer.vb">
+      <DependentUpon>EditChildForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditChildForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExportToExcel.vb" />
+    <Compile Include="AddDonorForm.designer.vb">
+      <DependentUpon>AddDonorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddDonorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExportToPDF.vb" />
+    <Compile Include="AddAdoptionForm.designer.vb">
+      <DependentUpon>AddAdoptionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddAdoptionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSignUpForm.designer.vb">
+      <DependentUpon>AdminSignUpForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSignUpForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPasswordForm.designer.vb">
+      <DependentUpon>ForgotPasswordForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPasswordForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SearchEmployeeForm.designer.vb">
+      <DependentUpon>SearchEmployeeForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchEmployeeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Simple3Des.vb" />
+    <Compile Include="SplashScreen.Designer.vb">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WelcomeForm.Designer.vb">
+      <DependentUpon>WelcomeForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WelcomeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddressForm.resx">
+      <DependentUpon>AddressForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BalanceReport.resx">
+      <DependentUpon>BalanceReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditDonorForm.resx">
+      <DependentUpon>EditDonorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDonationForm.resx">
+      <DependentUpon>AddDonationForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSpendForm.resx">
+      <DependentUpon>AddSpendForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUpForm.resx">
+      <DependentUpon>SignUpForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdopterReport.resx">
+      <DependentUpon>AdopterReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddChildForm.resx">
+      <DependentUpon>AddChildForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildrenReport.resx">
+      <DependentUpon>ChildrenReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DonorReport.resx">
+      <DependentUpon>DonorReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditAccountForm.resx">
+      <DependentUpon>EditAccountForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditAdopterForm.resx">
+      <DependentUpon>EditAdopterForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditChildForm.resx">
+      <DependentUpon>EditChildForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDonorForm.resx">
+      <DependentUpon>AddDonorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddAdoptionForm.resx">
+      <DependentUpon>AddAdoptionForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSignUpForm.resx">
+      <DependentUpon>AdminSignUpForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPasswordForm.resx">
+      <DependentUpon>ForgotPasswordForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchEmployeeForm.resx">
+      <DependentUpon>SearchEmployeeForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WelcomeForm.resx">
+      <DependentUpon>WelcomeForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="OMS_Preview_TemporaryKey.pfx" />
+    <None Include="Resources\ic_help_outline_black_18dp_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tempimage.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_account_balance_wallet_black_18dp_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_account_box_black_18dp_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_add_black_18dp_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_assignment_ind_black_18dp_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_attach_money_black_18dp_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_business_center_black_18dp_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_child_care_black_18dp_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_help_black_18dp_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adoption.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balance1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balance2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balance3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\donation1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fund.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fund2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fund3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spend1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spend2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trust.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volunteer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volunteer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon 64x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon 65 wt no word.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon 150x150 50wt bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon 64x64 65wt round bg.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_search_black_24dp_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_refresh_black_24dp_2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sky.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50 alpha BG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\75 alpha BG.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
